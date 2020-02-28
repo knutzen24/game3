@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<title>Bar Graph Creator</title>
+<link rel="stylesheet" href="css/barGraph.css">
+
+</head>
+
+<body>
+
+<h1>Create Your Own Bar Graph!<h1>
+
+<div id="inputs">
+
+<label for="graphTitle">Bar graph Title:</label><input id="graphTitle" type="text" onfocus="value=''">
+
+<table>
+
+<caption>Enter in your data!</caption>
+
+<tr><th><input type="text" id="xTitle" value="Axis title" onfocus="value=''"></th><th>Frequency</th></tr>
+<tr><td><input type="text" id="inputX1" onfocus="value=''"></td><td><input type="number" id="inputY1" onfocus="value=''"></td></tr>
+<tr><td><input type="text" id="inputX2" onfocus="value=''"></td><td><input type="number" id="inputY2" onfocus="value=''"></td></tr>
+<tr><td><input type="text" id="inputX3" onfocus="value=''"></td><td><input type="number" id="inputY3" onfocus="value=''"></td></tr>
+<tr><td><input type="text" id="inputX4" onfocus="value=''"></td><td><input type="number" id="inputY4" onfocus="value=''"></td></tr>
+<tr><td><input type="text" id="inputX5" onfocus="value=''"></td><td><input type="number" id="inputY5" onfocus="value=''"></td></tr>
+
+
+
+</table>
+
+</div>
+
+<canvas id="canvas" width="800px" height="500px">Your browser does not support canvas</canvas>
+<button onclick="init();">See Graph</button>
+
+</body>
+
+<script src="JavaScript/barGraph.js"></script>
+
+</html>
